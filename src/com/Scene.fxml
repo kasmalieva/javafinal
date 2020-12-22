@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="715.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controller">
+    <children>
+        <StackPane>
+            <children>
+                <VBox prefWidth="386.0" spacing="10.0">
+                    <children>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="386.0" text="Create user">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                        <GridPane prefHeight="138.0" prefWidth="310.0">
+                            <children>
+                                <Label fx:id="idLabel" text="id:" GridPane.rowIndex="1" />
+                                <Label fx:id="usernameLabel" text="username:" GridPane.rowIndex="2" />
+                                <Label fx:id="passwordLabel" text="password:" GridPane.rowIndex="3" />
+                                <Label fx:id="ageLabel" text="age:" GridPane.rowIndex="4" />
+                                <TextField fx:id="idCreate" promptText="Enter &quot;id&quot; of a user" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <TextField fx:id="usernameCreate" promptText="Enter &quot;username&quot; of a user" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <TextField fx:id="passwordCreate" promptText="Etner &quot;password&quot; of a user " text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <TextField fx:id="ageCreate" prefHeight="28.0" prefWidth="146.0" promptText="Enter &quot;age&quot; of user" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="69.59998321533203" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.40001678466797" minWidth="10.0" prefWidth="306.40001678466797" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="44.599981689453124" minHeight="10.0" prefHeight="32.20001220703126" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="35.199987792968756" minHeight="7.200000000000003" prefHeight="28.800006103515628" />
+                        <RowConstraints maxHeight="37.59999389648438" minHeight="3.9999938964843693" prefHeight="37.59999389648438" />
+                            </rowConstraints>
+                        </GridPane>
+                        <StackPane prefWidth="211.0">
+                            <children>
+                                <Button fx:id="createButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#buttonCreate" prefHeight="26.0" prefWidth="435.0" text="create user" StackPane.alignment="CENTER_RIGHT" />
+                            </children>
+                        </StackPane>
+                  <Label fx:id = "loginLabel" alignment="CENTER" prefHeight="39.0" prefWidth="386.0" text="Login">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameLogin" prefHeight="28.0" prefWidth="146.0" promptText="Enter &quot;username&quot; to login" text="" />
+                  <TextField fx:id="passwordLogin" prefHeight="28.0" prefWidth="146.0" promptText="Enter &quot;password&quot; to login" text="" />
+                  <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#buttonLogin" prefHeight="26.0" prefWidth="421.0" text="login" />
+
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</StackPane>
